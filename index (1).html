@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MaceGPT</title>
+    <style>
+        input[type="text"] {
+            font-family: "Century Gothic", sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            color: saddlebrown;
+        }
+
+        input[type="text"]::placeholder {
+            font-family: "Century Gothic", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #b68158;
+        }
+
+        body {
+            background: url('/static/parchment-bg.png') center center / cover no-repeat fixed;
+            color: saddlebrown;
+            font-family: Century Gothic, serif;
+            text-align: center;
+            padding: 40px;
+            min-height: 100vh;
+            font-weight: bold;
+        }
+        input {
+            width: 60%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        button {
+            font-family: "Century Gothic", sans-serif;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: saddlebrown;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover { background: #555; }
+
+        .answer {
+            font-family: "Century Gothic", sans-serif;
+            margin-top: 40px;
+            font-size: 20px;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>🦍 MaceGPT🔥</h1>
+
+    <form onsubmit="askMonke(event)">
+        <input type="text" name="question" placeholder="Ask me... about MACE" required>
+        <br>
+        <button type="submit">Ask</button>
+    </form>
+
+    <div class="answer" id="answerBox"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

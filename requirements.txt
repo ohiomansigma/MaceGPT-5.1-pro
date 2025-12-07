@@ -1,0 +1,4 @@
+groq>=0.37.1
+tavily-python>=0.7.14
+gunicorn>=21.2.0
+flask>=3.0.0
